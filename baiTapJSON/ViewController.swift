@@ -119,11 +119,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
             {
                 cellArr.append(i)
             }
-            else if i.categoryLevel == currentLevel + 1
+            
+        }
+        for i in result
+        {
+            if i.categoryLevel == currentLevel + 1
             {
                 tempNextARR.append(i)
             }
         }
+            
         currentLevel += 1
         cellArrNextLevel = tempNextARR
         tableView.reloadData()
