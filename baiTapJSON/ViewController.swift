@@ -123,7 +123,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
         }
         for i in result
         {
-            if i.categoryLevel == currentLevel + 1
+            if i.categoryLevel == currentLevel + 2
             {
                 tempNextARR.append(i)
             }
